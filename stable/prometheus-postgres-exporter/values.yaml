@@ -41,6 +41,12 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name:
 
+serviceMonitor:
+  # Specifies whether a ServiceMonitor should be created
+  enabled: true
+  interval: 30s
+  additionalLabels: {}
+
 config:
   datasource:
     host:

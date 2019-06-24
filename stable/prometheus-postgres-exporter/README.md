@@ -55,6 +55,9 @@ The following table lists the configurable parameters of the postgres Exporter c
 | `rbac.pspEnabled`               | Specifies whether a PodSecurityPolicy should be created.| `true` |
 | `serviceAccount.create`         | Specifies whether a service account should be created.| `true` |
 | `serviceAccount.name`           | Name of the service account.|        |
+| `serviceMonitor.enabled`        | Specifies whether a ServiceMonitor should be created.| `true` |
+| `serviceMonitor.interval`       | Interval at which metrics should be scraped.| `30s` |
+| `serviceMonitor.additionalLabels` | Labels used by Prometheus Operator to discover your Service Monitor. | `{}` |
 | `tolerations`                   | Add tolerations                            | `[]`  |
 | `nodeSelector`                    | node labels for pod assignment | `{}`  |
 | `affinity`                       |     node/pod affinities | `{}` |
